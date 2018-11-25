@@ -1,4 +1,4 @@
-#include <FileWatcher/FileWatcher.h>
+#include "FileWatcher/FileWatcher.h"
 #include "SpellCheck.cpp"
 #include "ScreenShot.cpp"
 #include "OCR.cpp"

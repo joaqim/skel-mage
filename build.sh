@@ -31,6 +31,8 @@ else
 	# might not work with some third party macros [https://www.gnu.org/savannah-checkouts/gnu/autoconf/manual/autoconf-2.69/html_node/Caching-Results.html#Caching-Results]
 fi
 make -j6
+
 #./main
+exit $?
 
 #git submodule foreach git clean -xdf

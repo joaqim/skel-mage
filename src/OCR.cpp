@@ -54,6 +54,10 @@ class OCR : public tesseract::TessBaseAPI {
     _pOcr = new KNearestOcr(_config);
   }
 
+  ~OCR() {
+    End();
+  }
+
   std::string recognize(cv::Mat image) {
     if(image.cols ==0 || image.rows == 0) return "";
 
@@ -79,6 +83,7 @@ class OCR : public tesseract::TessBaseAPI {
 
     Recognize(0);
 
+    //#define DEBUG
 #ifdef DEBUG
     // Iterate through the results.
     auto iterator = GetIterator();

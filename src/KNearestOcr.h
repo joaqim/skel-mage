@@ -22,6 +22,7 @@ public:
 
     int learn(const cv::Mat & img);
     int learn(const cv::Mat & img, char const c);
+    void learn(const cv::Mat &img, const cv::Rect &rect, const char &character);
     int learn(const std::vector<cv::Mat> & images);
     void saveTrainingData();
     bool loadTrainingData();
